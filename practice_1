@@ -1,0 +1,10 @@
+if(!require("BiocManager", quietly=TRUE))
+  install.packages("BiocManager")
+BiocManager::install("limma")
+BiocManager::install("ComplexHeatmap")
+
+devtools::install_github("saeyslab/nichenetr")
+
+library(dplyr)
+library(nichenetr)
+library(tidyverse)
